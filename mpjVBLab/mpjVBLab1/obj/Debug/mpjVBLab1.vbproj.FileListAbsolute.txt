@@ -1,0 +1,12 @@
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\bin\Debug\mpjVBLab1.exe.config
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\bin\Debug\mpjVBLab1.exe
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\bin\Debug\mpjVBLab1.pdb
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\bin\Debug\mpjVBLab1.xml
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\obj\Debug\mpjVBLab1.vbprojResolveAssemblyReference.cache
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\obj\Debug\mpjVBLab1.frmLab1.resources
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\obj\Debug\mpjVBLab1.Resources.resources
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\obj\Debug\mpjVBLab1.vbproj.GenerateResource.Cache
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\obj\Debug\mpjVBLab1.exe
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\obj\Debug\mpjVBLab1.xml
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\obj\Debug\mpjVBLab1.pdb
+C:\Users\Konkanok\Desktop\VB\mpjVBLab1\mpjVBLab1\obj\Debug\mpjVBLab1.frmLab2.resources
