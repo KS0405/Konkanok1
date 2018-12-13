@@ -22,3 +22,16 @@ C:\Users\Konkanok\Desktop\VB\mpjVBLab\mpjVBLab1\obj\Debug\MyProjectVB.vbproj.Gen
 C:\Users\Konkanok\Desktop\VB\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.exe
 C:\Users\Konkanok\Desktop\VB\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.xml
 C:\Users\Konkanok\Desktop\VB\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.pdb
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\bin\Debug\mpjVBLab1.exe.config
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\bin\Debug\mpjVBLab1.exe
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\bin\Debug\mpjVBLab1.pdb
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\bin\Debug\mpjVBLab1.xml
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\MyProjectVB.vbprojResolveAssemblyReference.cache
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmLab3.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmSalary.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmSale.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.Resources.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\MyProjectVB.vbproj.GenerateResource.Cache
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.exe
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.xml
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.pdb

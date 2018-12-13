@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmColor.Designer.vb">
+      <DependentUpon>frmColor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmColor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmSalary.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmColor.resx">
+      <DependentUpon>frmColor.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSalary.resx">
       <DependentUpon>frmSalary.vb</DependentUpon>
     </EmbeddedResource>
