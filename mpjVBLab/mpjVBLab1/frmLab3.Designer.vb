@@ -61,6 +61,7 @@ Partial Class frmLab3
         Me.txtInput.Name = "txtInput"
         Me.txtInput.Size = New System.Drawing.Size(365, 86)
         Me.txtInput.TabIndex = 0
+        Me.txtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'btnUp
         '

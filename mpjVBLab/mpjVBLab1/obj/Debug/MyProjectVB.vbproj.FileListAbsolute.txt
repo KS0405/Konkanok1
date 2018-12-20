@@ -35,3 +35,5 @@ C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\MyProjectVB
 C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.exe
 C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.xml
 C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.pdb
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmJob4.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmLab5.resources

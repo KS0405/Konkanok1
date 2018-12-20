@@ -99,10 +99,13 @@
     End Sub
 
     Private Sub btnUp_Click(sender As Object, e As EventArgs) Handles btnUp.Click
-        txtInput.Font = New Font(txtInput.Font.FontFamily, txtInput.Font.Size + 2)
+        txtInput.Text = Val(txtInput.Text) + 2
+
     End Sub
 
     Private Sub btnDown_Click(sender As Object, e As EventArgs) Handles btnDown.Click
-        txtInput.Font = New Font(txtInput.Font.FontFamily, txtInput.Font.Size - 2)
+        txtInput.Text = Val(txtInput.Text) - 2
+
+
     End Sub
 End Class
