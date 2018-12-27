@@ -88,4 +88,20 @@
             lblPaidPrice.Text = Val(lblPaidPrice.Text) + Val(lblFree1.Text)
         End If
     End Sub
+
+    Private Sub chkFree2_Click(sender As Object, e As EventArgs) Handles chkFree2.Click
+        If chkFree2.Checked = True Then
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) - Val(lblFree2.Text)
+        Else
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) + Val(lblFree2.Text)
+        End If
+    End Sub
+
+    Private Sub chkFree3_Click(sender As Object, e As EventArgs) Handles chkFree3.Click
+        If chkFree3.Checked = True Then
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) - Val(lblFree3.Text)
+        Else
+            lblPaidPrice.Text = Val(lblPaidPrice.Text) + Val(lblFree3.Text)
+        End If
+    End Sub
 End Class

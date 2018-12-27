@@ -85,7 +85,7 @@ Partial Class frmJob6
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(24, 47)
         Me.Label3.Name = "Label3"
@@ -98,7 +98,7 @@ Partial Class frmJob6
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.Black
         Me.Label4.Location = New System.Drawing.Point(152, 48)
         Me.Label4.Name = "Label4"
@@ -161,31 +161,34 @@ Partial Class frmJob6
         '
         'lblItemsPrice1
         '
+        Me.lblItemsPrice1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblItemsPrice1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblItemsPrice1.ForeColor = System.Drawing.Color.Black
-        Me.lblItemsPrice1.Location = New System.Drawing.Point(139, 78)
+        Me.lblItemsPrice1.Location = New System.Drawing.Point(141, 83)
         Me.lblItemsPrice1.Name = "lblItemsPrice1"
-        Me.lblItemsPrice1.Size = New System.Drawing.Size(109, 30)
+        Me.lblItemsPrice1.Size = New System.Drawing.Size(101, 30)
         Me.lblItemsPrice1.TabIndex = 9
         Me.lblItemsPrice1.Text = "40000"
         Me.lblItemsPrice1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblItemsPrice2
         '
+        Me.lblItemsPrice2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblItemsPrice2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblItemsPrice2.ForeColor = System.Drawing.Color.Black
-        Me.lblItemsPrice2.Location = New System.Drawing.Point(141, 108)
+        Me.lblItemsPrice2.Location = New System.Drawing.Point(140, 112)
         Me.lblItemsPrice2.Name = "lblItemsPrice2"
-        Me.lblItemsPrice2.Size = New System.Drawing.Size(101, 32)
+        Me.lblItemsPrice2.Size = New System.Drawing.Size(101, 30)
         Me.lblItemsPrice2.TabIndex = 10
         Me.lblItemsPrice2.Text = "50000"
         Me.lblItemsPrice2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblItemsPrice3
         '
+        Me.lblItemsPrice3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblItemsPrice3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblItemsPrice3.ForeColor = System.Drawing.Color.Black
-        Me.lblItemsPrice3.Location = New System.Drawing.Point(139, 140)
+        Me.lblItemsPrice3.Location = New System.Drawing.Point(140, 142)
         Me.lblItemsPrice3.Name = "lblItemsPrice3"
         Me.lblItemsPrice3.Size = New System.Drawing.Size(101, 31)
         Me.lblItemsPrice3.TabIndex = 11
@@ -194,9 +197,10 @@ Partial Class frmJob6
         '
         'lblItemsPrice4
         '
+        Me.lblItemsPrice4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblItemsPrice4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblItemsPrice4.ForeColor = System.Drawing.Color.Black
-        Me.lblItemsPrice4.Location = New System.Drawing.Point(139, 173)
+        Me.lblItemsPrice4.Location = New System.Drawing.Point(141, 173)
         Me.lblItemsPrice4.Name = "lblItemsPrice4"
         Me.lblItemsPrice4.Size = New System.Drawing.Size(101, 30)
         Me.lblItemsPrice4.TabIndex = 12
@@ -220,7 +224,7 @@ Partial Class frmJob6
         Me.GroupBox1.ForeColor = System.Drawing.Color.Blue
         Me.GroupBox1.Location = New System.Drawing.Point(38, 156)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(271, 225)
+        Me.GroupBox1.Size = New System.Drawing.Size(271, 244)
         Me.GroupBox1.TabIndex = 13
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "อุปกรณ์เสริม"
@@ -247,6 +251,7 @@ Partial Class frmJob6
         '
         'lblFree3
         '
+        Me.lblFree3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblFree3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblFree3.ForeColor = System.Drawing.Color.Black
         Me.lblFree3.Location = New System.Drawing.Point(157, 134)
@@ -259,7 +264,7 @@ Partial Class frmJob6
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label11.ForeColor = System.Drawing.Color.Black
         Me.Label11.Location = New System.Drawing.Point(21, 47)
         Me.Label11.Name = "Label11"
@@ -272,7 +277,7 @@ Partial Class frmJob6
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.Black
         Me.Label12.Location = New System.Drawing.Point(149, 47)
         Me.Label12.Name = "Label12"
@@ -283,6 +288,7 @@ Partial Class frmJob6
         '
         'lblFree2
         '
+        Me.lblFree2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblFree2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblFree2.ForeColor = System.Drawing.Color.Black
         Me.lblFree2.Location = New System.Drawing.Point(157, 103)
@@ -307,6 +313,7 @@ Partial Class frmJob6
         '
         'lblFree1
         '
+        Me.lblFree1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblFree1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblFree1.ForeColor = System.Drawing.Color.Black
         Me.lblFree1.Location = New System.Drawing.Point(157, 73)
