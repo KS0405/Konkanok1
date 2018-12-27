@@ -131,7 +131,9 @@ Partial Class frmLab5
         '
         'txtProduct
         '
+        Me.txtProduct.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtProduct.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txtProduct.ForeColor = System.Drawing.Color.Black
         Me.txtProduct.Location = New System.Drawing.Point(221, 93)
         Me.txtProduct.Name = "txtProduct"
         Me.txtProduct.Size = New System.Drawing.Size(223, 26)
@@ -140,7 +142,9 @@ Partial Class frmLab5
         '
         'txtPrice
         '
+        Me.txtPrice.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txtPrice.ForeColor = System.Drawing.Color.Black
         Me.txtPrice.Location = New System.Drawing.Point(221, 127)
         Me.txtPrice.Name = "txtPrice"
         Me.txtPrice.Size = New System.Drawing.Size(223, 26)
@@ -149,7 +153,9 @@ Partial Class frmLab5
         '
         'txtUnit
         '
+        Me.txtUnit.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.txtUnit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.txtUnit.ForeColor = System.Drawing.Color.Black
         Me.txtUnit.Location = New System.Drawing.Point(221, 159)
         Me.txtUnit.Name = "txtUnit"
         Me.txtUnit.Size = New System.Drawing.Size(223, 26)
@@ -158,7 +164,7 @@ Partial Class frmLab5
         '
         'lblTotal
         '
-        Me.lblTotal.BackColor = System.Drawing.Color.White
+        Me.lblTotal.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblTotal.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblTotal.Location = New System.Drawing.Point(225, 204)
         Me.lblTotal.Name = "lblTotal"
@@ -168,7 +174,7 @@ Partial Class frmLab5
         '
         'lblDiscount
         '
-        Me.lblDiscount.BackColor = System.Drawing.Color.White
+        Me.lblDiscount.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblDiscount.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblDiscount.Location = New System.Drawing.Point(225, 340)
         Me.lblDiscount.Name = "lblDiscount"
@@ -178,7 +184,7 @@ Partial Class frmLab5
         '
         'lblPaid
         '
-        Me.lblPaid.BackColor = System.Drawing.Color.White
+        Me.lblPaid.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblPaid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblPaid.Location = New System.Drawing.Point(225, 373)
         Me.lblPaid.Name = "lblPaid"
@@ -188,7 +194,7 @@ Partial Class frmLab5
         '
         'lblCredit
         '
-        Me.lblCredit.BackColor = System.Drawing.Color.White
+        Me.lblCredit.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lblCredit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.lblCredit.Location = New System.Drawing.Point(225, 404)
         Me.lblCredit.Name = "lblCredit"
