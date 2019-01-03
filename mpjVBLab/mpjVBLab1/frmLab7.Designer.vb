@@ -32,8 +32,8 @@ Partial Class frmLab7
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.txtAdd = New System.Windows.Forms.TextBox()
-        Me.txtClear = New System.Windows.Forms.TextBox()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.lblOutput = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -58,7 +58,9 @@ Partial Class frmLab7
         '
         'cboOutput
         '
+        Me.cboOutput.BackColor = System.Drawing.SystemColors.Control
         Me.cboOutput.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        Me.cboOutput.ForeColor = System.Drawing.Color.Black
         Me.cboOutput.FormattingEnabled = True
         Me.cboOutput.Location = New System.Drawing.Point(360, 64)
         Me.cboOutput.Name = "cboOutput"
@@ -139,14 +141,6 @@ Partial Class frmLab7
         Me.txtAdd.Size = New System.Drawing.Size(143, 26)
         Me.txtAdd.TabIndex = 9
         '
-        'txtClear
-        '
-        Me.txtClear.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
-        Me.txtClear.Location = New System.Drawing.Point(347, 416)
-        Me.txtClear.Name = "txtClear"
-        Me.txtClear.Size = New System.Drawing.Size(143, 26)
-        Me.txtClear.TabIndex = 10
-        '
         'btnClose
         '
         Me.btnClose.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -158,13 +152,22 @@ Partial Class frmLab7
         Me.btnClose.Text = "ปิดหน้าต่าง"
         Me.btnClose.UseVisualStyleBackColor = False
         '
+        'lblOutput
+        '
+        Me.lblOutput.BackColor = System.Drawing.Color.White
+        Me.lblOutput.ForeColor = System.Drawing.Color.Black
+        Me.lblOutput.Location = New System.Drawing.Point(330, 416)
+        Me.lblOutput.Name = "lblOutput"
+        Me.lblOutput.Size = New System.Drawing.Size(154, 30)
+        Me.lblOutput.TabIndex = 12
+        '
         'frmLab7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(588, 536)
+        Me.ClientSize = New System.Drawing.Size(616, 528)
+        Me.Controls.Add(Me.lblOutput)
         Me.Controls.Add(Me.btnClose)
-        Me.Controls.Add(Me.txtClear)
         Me.Controls.Add(Me.txtAdd)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnAdd)
@@ -192,6 +195,6 @@ Partial Class frmLab7
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents txtAdd As TextBox
-    Friend WithEvents txtClear As TextBox
     Friend WithEvents btnClose As Button
+    Friend WithEvents lblOutput As Label
 End Class
