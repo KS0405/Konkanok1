@@ -1,6 +1,7 @@
 ﻿Public Class frmLab7
     Private Sub frmLab7_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnAdd.Enabled = False
+        txtAdd.Focus()
 
     End Sub
 
