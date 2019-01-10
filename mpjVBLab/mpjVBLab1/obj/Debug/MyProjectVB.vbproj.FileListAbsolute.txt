@@ -40,3 +40,6 @@ C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.f
 C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmJob6.resources
 C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmLab7.resources
 C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmLab8.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmMain.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmTest02.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmTest01.resources

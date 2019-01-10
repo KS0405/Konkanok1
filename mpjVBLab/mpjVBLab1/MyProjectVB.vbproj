@@ -102,6 +102,12 @@
     <Compile Include="frmLab7.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmSalary.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,12 @@
     <Compile Include="frmLab8.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmTest02.Designer.vb">
+      <DependentUpon>frmTest02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTest02.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -135,6 +147,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmTest01.Designer.vb">
+      <DependentUpon>frmTest01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTest01.vb">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +171,9 @@
     <EmbeddedResource Include="frmLab7.resx">
       <DependentUpon>frmLab7.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSalary.resx">
       <DependentUpon>frmSalary.vb</DependentUpon>
     </EmbeddedResource>
@@ -162,11 +183,17 @@
     <EmbeddedResource Include="frmLab8.resx">
       <DependentUpon>frmLab8.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTest02.resx">
+      <DependentUpon>frmTest02.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTest01.resx">
+      <DependentUpon>frmTest01.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -180,6 +207,42 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculating-eac-article.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_Calculate_your_startup_costs_brick_mortar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visual-basic-in-urdu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VisualBasicLogo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดาวน์โหลด %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดาวน์โหลด %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visualstudio.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

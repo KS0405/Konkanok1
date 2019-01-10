@@ -22,5 +22,65 @@ mpjVBLab1
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:mpjVBLab1.My.Resources.Resources.BG_Calculate_your_startup_costs_brick_mortar">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.calculating_eac_article">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.images">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.images__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.images1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.images2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.pink_folder">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.visual_basic_in_urdu1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.VisualBasicLogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.visualstudio">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.ดาวน์โหลด__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:mpjVBLab1.My.Resources.Resources.ดาวน์โหลด__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
