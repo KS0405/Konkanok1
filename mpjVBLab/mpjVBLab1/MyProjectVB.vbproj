@@ -84,6 +84,12 @@
     <Compile Include="frmJob6.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmLab10.Designer.vb">
+      <DependentUpon>frmLab10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLab10.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLab3.Designer.vb">
       <DependentUpon>frmLab3.vb</DependentUpon>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmJob6.resx">
       <DependentUpon>frmJob6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLab10.resx">
+      <DependentUpon>frmLab10.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLab3.resx">
       <DependentUpon>frmLab3.vb</DependentUpon>

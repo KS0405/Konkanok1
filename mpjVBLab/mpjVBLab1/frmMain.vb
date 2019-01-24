@@ -64,4 +64,8 @@
     Private Sub LabToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LabToolStripMenuItem.Click
 
     End Sub
+
+    Private Sub แบบฝกหด9ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles แบบฝกหด9ToolStripMenuItem.Click
+
+    End Sub
 End Class
