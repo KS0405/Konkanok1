@@ -133,6 +133,12 @@
     <Compile Include="frmTest02.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmExp03.Designer.vb">
+      <DependentUpon>frmExp03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmExp03.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -185,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTest02.resx">
       <DependentUpon>frmTest02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmExp03.resx">
+      <DependentUpon>frmExp03.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
