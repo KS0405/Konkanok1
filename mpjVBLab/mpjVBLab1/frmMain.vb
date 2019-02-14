@@ -1,6 +1,7 @@
 ﻿Public Class frmMain
     Private Sub แบบฝกหด1ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles แบบฝกหด1ToolStripMenuItem2.Click
-
+        Dim Labsql As New Form1
+        Labsql.ShowDialog()
     End Sub
 
     Private Sub ใบงานท1ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ใบงานท1ToolStripMenuItem.Click
@@ -68,4 +69,26 @@
     Private Sub แบบฝกหด9ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles แบบฝกหด9ToolStripMenuItem.Click
 
     End Sub
+
+    Private Sub ใบงานท10ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ใบงานท10ToolStripMenuItem.Click
+        Dim Lab10 As New frmLab10
+        Lab10.ShowDialog()
+    End Sub
+
+    Private Sub แบบฝกหด1ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles แบบฝกหด1ToolStripMenuItem3.Click
+        Dim Test04 As New frmTest04
+        Test04.ShowDialog()
+    End Sub
+
+    Private Sub ใบงานท11ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ใบงานท11ToolStripMenuItem.Click
+        Dim Lab11 As New frmLab11
+        Lab11.ShowDialog()
+    End Sub
+
+    Private Sub แบบฝกหด5ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles แบบฝกหด5ToolStripMenuItem.Click
+        Dim Test05 As New frmTest05
+        Test05.ShowDialog()
+    End Sub
+
+
 End Class

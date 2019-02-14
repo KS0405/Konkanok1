@@ -48,6 +48,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -72,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExamMidterm.Designer.vb">
+      <DependentUpon>ExamMidterm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExamMidterm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmJob4.Designer.vb">
       <DependentUpon>frmJob4.vb</DependentUpon>
     </Compile>
@@ -88,6 +101,12 @@
       <DependentUpon>frmLab10.vb</DependentUpon>
     </Compile>
     <Compile Include="frmLab10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLab11.Designer.vb">
+      <DependentUpon>frmLab11.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmLab11.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLab3.Designer.vb">
@@ -145,6 +164,18 @@
     <Compile Include="frmExp03.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmTest04.Designer.vb">
+      <DependentUpon>frmTest04.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTest04.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTest05.Designer.vb">
+      <DependentUpon>frmTest05.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTest05.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -166,8 +197,20 @@
     <Compile Include="frmTest01.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="sqlcommand.Designer.vb">
+      <DependentUpon>sqlcommand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sqlcommand.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ExamMidterm.resx">
+      <DependentUpon>ExamMidterm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmJob4.resx">
       <DependentUpon>frmJob4.vb</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLab10.resx">
       <DependentUpon>frmLab10.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLab11.resx">
+      <DependentUpon>frmLab11.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLab3.resx">
       <DependentUpon>frmLab3.vb</DependentUpon>
@@ -204,6 +250,12 @@
     <EmbeddedResource Include="frmExp03.resx">
       <DependentUpon>frmExp03.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmTest04.resx">
+      <DependentUpon>frmTest04.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTest05.resx">
+      <DependentUpon>frmTest05.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -212,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTest01.resx">
       <DependentUpon>frmTest01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sqlcommand.resx">
+      <DependentUpon>sqlcommand.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

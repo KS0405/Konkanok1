@@ -145,7 +145,6 @@ Partial Class frmMain
         '
         'ใบงานท10ToolStripMenuItem
         '
-        Me.ใบงานท10ToolStripMenuItem.Enabled = False
         Me.ใบงานท10ToolStripMenuItem.Image = Global.mpjVBLab1.My.Resources.Resources.images
         Me.ใบงานท10ToolStripMenuItem.Name = "ใบงานท10ToolStripMenuItem"
         Me.ใบงานท10ToolStripMenuItem.Size = New System.Drawing.Size(170, 34)
@@ -153,7 +152,6 @@ Partial Class frmMain
         '
         'ใบงานท11ToolStripMenuItem
         '
-        Me.ใบงานท11ToolStripMenuItem.Enabled = False
         Me.ใบงานท11ToolStripMenuItem.Image = Global.mpjVBLab1.My.Resources.Resources.images
         Me.ใบงานท11ToolStripMenuItem.Name = "ใบงานท11ToolStripMenuItem"
         Me.ใบงานท11ToolStripMenuItem.Size = New System.Drawing.Size(170, 34)
@@ -228,6 +226,7 @@ Partial Class frmMain
         '
         'แบบฝกหด6ToolStripMenuItem
         '
+        Me.แบบฝกหด6ToolStripMenuItem.Enabled = False
         Me.แบบฝกหด6ToolStripMenuItem.Image = Global.mpjVBLab1.My.Resources.Resources.images__1_
         Me.แบบฝกหด6ToolStripMenuItem.Name = "แบบฝกหด6ToolStripMenuItem"
         Me.แบบฝกหด6ToolStripMenuItem.Size = New System.Drawing.Size(191, 34)
@@ -235,6 +234,7 @@ Partial Class frmMain
         '
         'แบบฝกหด7ToolStripMenuItem
         '
+        Me.แบบฝกหด7ToolStripMenuItem.Enabled = False
         Me.แบบฝกหด7ToolStripMenuItem.Image = Global.mpjVBLab1.My.Resources.Resources.pink_folder
         Me.แบบฝกหด7ToolStripMenuItem.Name = "แบบฝกหด7ToolStripMenuItem"
         Me.แบบฝกหด7ToolStripMenuItem.Size = New System.Drawing.Size(191, 34)
@@ -242,6 +242,9 @@ Partial Class frmMain
         '
         'แบบฝกหด8ToolStripMenuItem
         '
+        Me.แบบฝกหด8ToolStripMenuItem.Checked = True
+        Me.แบบฝกหด8ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.แบบฝกหด8ToolStripMenuItem.Enabled = False
         Me.แบบฝกหด8ToolStripMenuItem.Image = Global.mpjVBLab1.My.Resources.Resources.images2
         Me.แบบฝกหด8ToolStripMenuItem.Name = "แบบฝกหด8ToolStripMenuItem"
         Me.แบบฝกหด8ToolStripMenuItem.Size = New System.Drawing.Size(191, 34)

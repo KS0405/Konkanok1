@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmLab10
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,10 @@ Partial Class frmLab10
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lstData = New System.Windows.Forms.ListBox()
@@ -46,6 +48,13 @@ Partial Class frmLab10
         Me.txtSaleB = New System.Windows.Forms.TextBox()
         Me.txtSaleC = New System.Windows.Forms.TextBox()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.datagrit = New System.Windows.Forms.DataGridView()
+        Me.column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.datagrit, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -192,7 +201,6 @@ Partial Class frmLab10
         '
         Me.cboIndex.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
         Me.cboIndex.FormattingEnabled = True
-        Me.cboIndex.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
         Me.cboIndex.Location = New System.Drawing.Point(72, 327)
         Me.cboIndex.Name = "cboIndex"
         Me.cboIndex.Size = New System.Drawing.Size(121, 28)
@@ -284,11 +292,60 @@ Partial Class frmLab10
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = False
         '
+        'datagrit
+        '
+        Me.datagrit.AllowUserToAddRows = False
+        Me.datagrit.AllowUserToDeleteRows = False
+        Me.datagrit.AllowUserToResizeColumns = False
+        Me.datagrit.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.datagrit.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.datagrit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.datagrit.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(222, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.datagrit.DefaultCellStyle = DataGridViewCellStyle2
+        Me.datagrit.Location = New System.Drawing.Point(636, 84)
+        Me.datagrit.Name = "datagrit"
+        Me.datagrit.Size = New System.Drawing.Size(542, 344)
+        Me.datagrit.TabIndex = 27
+        '
+        'column1
+        '
+        Me.column1.HeaderText = "ชื่อพนักงาน"
+        Me.column1.Name = "column1"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "ยอดขาย A"
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "ยอดขาย B"
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "ยอดขาย C"
+        Me.Column4.Name = "Column4"
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "รวมยอดขาย"
+        Me.Column5.Name = "Column5"
+        '
         'frmLab10
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(624, 588)
+        Me.ClientSize = New System.Drawing.Size(1234, 528)
+        Me.Controls.Add(Me.datagrit)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.txtSaleC)
         Me.Controls.Add(Me.txtSaleB)
@@ -315,6 +372,7 @@ Partial Class frmLab10
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmLab10"
         Me.Text = "frmLab10"
+        CType(Me.datagrit, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -344,4 +402,10 @@ Partial Class frmLab10
     Friend WithEvents txtSaleB As TextBox
     Friend WithEvents txtSaleC As TextBox
     Friend WithEvents btnAdd As Button
+    Friend WithEvents datagrit As DataGridView
+    Friend WithEvents column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
 End Class
