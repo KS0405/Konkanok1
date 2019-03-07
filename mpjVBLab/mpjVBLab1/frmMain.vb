@@ -90,5 +90,8 @@
         Test05.ShowDialog()
     End Sub
 
-
+    Private Sub ใบงานท12ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ใบงานท12ToolStripMenuItem.Click
+        Dim Lab12 As New frmLab12
+        Lab12.ShowDialog()
+    End Sub
 End Class

@@ -50,4 +50,5 @@ C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.f
 C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmTest04.resources
 C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmTest05.resources
 C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.Form1.resources
-C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.sqlcommand.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.frmLab12.resources
+C:\Users\Konkanok\Desktop\GIT\Konkanok1\mpjVBLab\mpjVBLab1\obj\Debug\mpjVBLab1.sqlcom.resources

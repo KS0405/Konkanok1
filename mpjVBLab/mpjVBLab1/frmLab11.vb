@@ -50,7 +50,7 @@ Public Class frmLab11
 
     Private Sub btnChoice3_Click(sender As Object, e As EventArgs) Handles btnChoice3.Click
         connetDB()
-        mysql = "select  Count*From Customers where Country like '%Brazil%'"
+        mysql = "select Count(*) From Customers where Country like '%Brazil%'"
         myDA = New SqlDataAdapter(mysql, myCon)
         myDS = New DataSet
         myDS.Clear()
@@ -63,21 +63,7 @@ Public Class frmLab11
 
     Private Sub btnChoice4_Click(sender As Object, e As EventArgs) Handles btnChoice4.Click
         connetDB()
-        'mysql = "select From Products where ProductName like 'Yang Wang%'"
-        'myDA = New SqlDataAdapter(mysql, myCon)
-        'myDS = New DataSet
-        'myDS.Clear()
-
-        'myDA.Fill(myDS, "myPro")
-        'dgvData.DataSource = myDS.Tables("myPro")
-        'dgvData.Columns(0).HeaderText = "ProductName"
-        'dgvData.Columns(1).HeaderText = "UnitsOnOrder"
-        'myCon.Close()
-    End Sub
-
-    Private Sub btnChoice5_Click(sender As Object, e As EventArgs) Handles btnChoice5.Click
-        connetDB()
-        mysql = "select ProductName,UnitsInStock From Products where UnitsInstock < 10 "
+        mysql = "Select ProductName,UnitsInStock,ContactName from products,customers where ContactName = 'Yang Wang'"
         myDA = New SqlDataAdapter(mysql, myCon)
         myDS = New DataSet
         myDS.Clear()
@@ -86,12 +72,28 @@ Public Class frmLab11
         dgvData.DataSource = myDS.Tables("myPro")
         dgvData.Columns(0).HeaderText = "ProductName"
         dgvData.Columns(1).HeaderText = "UnitsInStock"
+        dgvData.Columns(1).HeaderText = "ContactName"
+        myCon.Close()
+    End Sub
+
+    Private Sub btnChoice5_Click(sender As Object, e As EventArgs) Handles btnChoice5.Click
+        connetDB()
+        mysql = "select ProductName,UnitPrice,UnitsInStock from Products where UnitsInStock < '10' "
+        myDA = New SqlDataAdapter(mysql, myCon)
+        myDS = New DataSet
+        myDS.Clear()
+
+        myDA.Fill(myDS, "myPro")
+        dgvData.DataSource = myDS.Tables("myPro")
+        dgvData.Columns(0).HeaderText = "ProductName"
+        dgvData.Columns(1).HeaderText = "UnitPrice"
+        dgvData.Columns(2).HeaderText = "UnitsInStock"
         myCon.Close()
     End Sub
 
     Private Sub btnChoice6_Click(sender As Object, e As EventArgs) Handles btnChoice6.Click
         connetDB()
-        mysql = "select *From Orders where OrderID like '10255' "
+        mysql = "Select * from [Order Details] where OrderID like '10255' "
         myDA = New SqlDataAdapter(mysql, myCon)
         myDS = New DataSet
         myDS.Clear()
@@ -103,7 +105,7 @@ Public Class frmLab11
 
     Private Sub btnChoice7_Click(sender As Object, e As EventArgs) Handles btnChoice7.Click
         connetDB()
-        mysql = "select Freight From Orders where OrderID like '10255' "
+        mysql = "Select sum(UnitPrice*Quantity) as Total from [Order Details] where OrderID like '10255' "
         myDA = New SqlDataAdapter(mysql, myCon)
         myDS = New DataSet
         myDS.Clear()
@@ -115,13 +117,44 @@ Public Class frmLab11
 
     Private Sub btnChoice8_Click(sender As Object, e As EventArgs) Handles btnChoice8.Click
         connetDB()
-        mysql = "select Customers From Orders where OrderID like '10347' "
+        mysql = "select * from [Order Details] , Customers , Orders where [Order Details].OrderID = Orders .OrderID and Orders .CustomerID = Customers .CustomerID  and Orders .OrderID  = 10347"
         myDA = New SqlDataAdapter(mysql, myCon)
         myDS = New DataSet
         myDS.Clear()
 
         myDA.Fill(myDS, "myOrder")
         dgvData.DataSource = myDS.Tables("myOrder")
+
         myCon.Close()
+    End Sub
+
+    Private Sub btnChoice10_Click(sender As Object, e As EventArgs) Handles btnChoice10.Click
+        connetDB()
+        mysql = "select count(*) As Total from Orders where ShipCountry like '%Italy%'"
+        myDA = New SqlDataAdapter(mysql, myCon)
+        myDS = New DataSet
+        myDS.Clear()
+
+        myDA.Fill(myDS, "myCus")
+        dgvData.DataSource = myDS.Tables("myCus")
+        dgvData.Columns(0).HeaderText = "ITALY"
+        myCon.Close()
+    End Sub
+
+    Private Sub btnChoice9_Click(sender As Object, e As EventArgs) Handles btnChoice9.Click
+        connetDB()
+        mysql = "select * from [Order Details] , Products , Suppliers where [Order Details].ProductID =Products .ProductID and Products.SupplierID = Suppliers.SupplierID and Suppliers .CompanyName  = 'Exotic Liquids'"
+        myDA = New SqlDataAdapter(mysql, myCon)
+        myDS = New DataSet
+        myDS.Clear()
+
+        myDA.Fill(myDS, "myPro")
+        dgvData.DataSource = myDS.Tables("myPro")
+
+        myCon.Close()
+    End Sub
+
+    Private Sub frmLab11_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

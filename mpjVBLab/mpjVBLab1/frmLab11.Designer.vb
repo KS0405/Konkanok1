@@ -40,9 +40,16 @@ Partial Class frmLab11
         '
         'dgvData
         '
+        Me.dgvData.AllowUserToAddRows = False
+        Me.dgvData.AllowUserToDeleteRows = False
+        Me.dgvData.AllowUserToOrderColumns = True
+        Me.dgvData.AllowUserToResizeColumns = False
+        Me.dgvData.AllowUserToResizeRows = False
         Me.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvData.Location = New System.Drawing.Point(12, 104)
         Me.dgvData.Name = "dgvData"
+        Me.dgvData.RowHeadersVisible = False
+        Me.dgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvData.Size = New System.Drawing.Size(1202, 347)
         Me.dgvData.TabIndex = 25
         '

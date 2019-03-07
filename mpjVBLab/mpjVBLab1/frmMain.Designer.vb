@@ -159,7 +159,6 @@ Partial Class frmMain
         '
         'ใบงานท12ToolStripMenuItem
         '
-        Me.ใบงานท12ToolStripMenuItem.Enabled = False
         Me.ใบงานท12ToolStripMenuItem.Image = Global.mpjVBLab1.My.Resources.Resources.images
         Me.ใบงานท12ToolStripMenuItem.Name = "ใบงานท12ToolStripMenuItem"
         Me.ใบงานท12ToolStripMenuItem.Size = New System.Drawing.Size(170, 34)
