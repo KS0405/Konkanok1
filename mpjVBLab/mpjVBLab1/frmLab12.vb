@@ -8,7 +8,7 @@ Public Class frmLab12
     'Dim myDA As New SqlDataAdapter
     'Dim myDS As DataSet
     'Dim mysql As String
-    Dim strCon As String = ConfigurationManager.ConnectionStrings("mpjVBLab1.My.MySettings.strCompany").ConnectionString
+    Dim strCon As String = ConfigurationManager.ConnectionStrings("mpjVBLab1.My.MySettings.strComXXX").ConnectionString
     Dim strSQL As String
 
     Dim myCon As New SqlConnection(strCon)
@@ -47,7 +47,7 @@ Public Class frmLab12
 
 
 
-        strSQL = "select depName from tbDepartment"
+        strSQL = "select depName from Department"
         myComm = New SqlCommand(strSQL, myCon)
         myDR = myComm.ExecuteReader()
 
@@ -62,14 +62,14 @@ Public Class frmLab12
         End If
         myDR.Close()
 
-        strSQL = "select empID,empName,empLname,IIF(sex=1, 'ชาย', 'หญิง') As gender ,address,salary,depID from tbEmployee"
+        strSQL = "select empId,empName,empLname,IIF(empGender=1, 'ชาย', 'หญิง') As Gender ,empAddress,empSalary,depId from Employee"
         dgvEmp.DataSource = Datatable()
 
         dgvEmp.Columns(0).HeaderText = "รหัสประจำตัว"
         dgvEmp.Columns(1).HeaderText = "ชื่อ"
         dgvEmp.Columns(2).HeaderText = "นามสกุล"
-        dgvEmp.Columns(3).HeaderText = "ที่อยู่"
-        dgvEmp.Columns(4).HeaderText = "เพศ"
+        dgvEmp.Columns(3).HeaderText = "เพศ"
+        dgvEmp.Columns(4).HeaderText = "ที่อยู่"
         dgvEmp.Columns(5).HeaderText = "เงินเดือน"
         dgvEmp.Columns(6).HeaderText = "แผนกงาน"
 
@@ -119,7 +119,7 @@ Public Class frmLab12
         Dim delete_id As String = dgvEmp.Item(0, i).Value
 
         If delete_ = DialogResult.Yes Then
-            strSQL = "delete from tbEmployee where empID = @eid"
+            strSQL = "delete from Employee where empId = @eid"
             myComm = New SqlClient.SqlCommand(strSQL, myCon)
             myComm.Parameters.AddWithValue("eid", txtEmpID.Text)
 
@@ -128,7 +128,7 @@ Public Class frmLab12
             Else
                 MsgBox("delete success")
 
-                strSQL = "select empID,empName,empLname,IIF(sex=1, 'ชาย', 'หญิง') As gender ,address,salary,depID from tbEmployee"
+                strSQL = "select empID,empName,empLname,IIF(empGender=1, 'ชาย', 'หญิง') As gender ,empAddress,empSalary,depId from Employee"
                 myDA = New SqlClient.SqlDataAdapter(strSQL, myCon)
                 myDS = New DataSet
                 myDA.Fill(myDS, "table")
@@ -140,14 +140,11 @@ Public Class frmLab12
 
     End Sub
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+
         panEmp.Enabled = True
         oldEmpID = txtEmpID.Text
         userAct = "update"
         panEmp.Enabled = True
-
-
-
-
         radMale.Checked = True
         dgvEmp.Enabled = False
         btnInsert.Enabled = False
@@ -180,7 +177,7 @@ Public Class frmLab12
             If userAct = "insert" Then
 
 
-                strSQL = "select empID from tbEmployee where empID = @eid"
+                strSQL = "select empId from Employee where empId = @eid"
                 myComm = New SqlCommand(strSQL, myCon)
                 myComm.Parameters.AddWithValue("eid", txtEmpID.Text)
                 myDR = myComm.ExecuteReader()
@@ -193,7 +190,7 @@ Public Class frmLab12
                 End If
                 myDR.Close()
 
-                strSQL = "insert into tbEmployee (empID ,empName ,empLname ,sex ,address ,salary ,depID) values(@1 ,@2 ,@3 ,@4 ,@5 ,@6  ,(select depID from tbDepartment where depName = '" & cboDepart.SelectedItem & "'))"
+                strSQL = "insert into Employee (empId ,empName ,empLname ,empGender ,empAddress ,empSalary ,depID) values(@1 ,@2 ,@3 ,@4 ,@5 ,@6  ,(select depID from Department where depName = '" & cboDepart.SelectedItem & "'))"
                 myComm = New SqlCommand(strSQL, myCon)
                 myComm.Parameters.Clear()
                 With myComm.Parameters
@@ -221,8 +218,8 @@ Public Class frmLab12
                     radMale.Checked = False
                     panEmp.Enabled = False
 
-                    '  strSQL = "select empID,empName,empLname,IIF(sex=1, 'ชาย', 'หญิง') As gender ,address,salary,depID from tbEmployee "
-                    strSQL = "select * from tbEmployee"
+                    strSQL = "select empId,empName,empLname,IIF(empGender=1, 'ชาย', 'หญิง') As gender ,empAddress,empSalary,depId from Employee "
+
                     myDA = New SqlDataAdapter(strSQL, myCon)
                     myDS = New DataSet
                     myDA.Fill(myDS, "table")
@@ -239,7 +236,7 @@ Public Class frmLab12
             Else
 
                 If oldEmpID <> txtEmpID.Text Then
-                    strSQL = "select empID from tbEmployee where empID = @eid"
+                    strSQL = "select empId from Employee where empId = @eid"
                     myComm = New SqlCommand(strSQL, myCon)
                     myComm.Parameters.AddWithValue("eid", txtEmpID.Text)
                     myDR = myComm.ExecuteReader()
@@ -254,7 +251,7 @@ Public Class frmLab12
 
 
 
-                strSQL = "update tbEmployee set empID=@1,empName=@2 ,empLname=@3 ,sex=@4 ,address=@5 ,salary=@6 ,depID = (select depID from tbDepartment where depName = '" & cboDepart.SelectedItem & "') where empID = @eid"
+                strSQL = "update Employee set empId=@1,empName=@2 ,empLname=@3 ,empGender=@4 ,empAddress=@5 ,empSalary=@6 ,depId = (select depId from Department where depName = '" & cboDepart.SelectedItem & "') where empId = @eid"
                 myComm = New SqlCommand(strSQL, myCon)
                 myComm.Parameters.Clear()
                 With myComm.Parameters
@@ -283,7 +280,7 @@ Public Class frmLab12
                     radMale.Checked = False
                     panEmp.Enabled = False
 
-                    strSQL = "select empID,empName,empLname,IIF(sex=1, 'ชาย', 'หญิง') As Gender ,address,salary,depID from tbEmployee"
+                    strSQL = "select empId,empName,empLname,IIF(empGender=1, 'ชาย', 'หญิง') As Gender ,empAddress,empSalary,depId from Employee"
                     myDA = New SqlDataAdapter(strSQL, myCon)
                     myDS = New DataSet
                     myDA.Fill(myDS, "table")
@@ -338,19 +335,19 @@ Public Class frmLab12
         Dim x As Integer = dgvEmp.CurrentRow.Index
         Dim selectA As String = dgvEmp.Item(0, x).Value
         'strSQL = "select * from tbEmployee,tbDepartment where empID = '" & selectA & "'"
-        strSQL = "select tbEmployee.*,tbDepartment.depName from tbEmployee,tbDepartment where tbEmployee.depID = tbDepartment.depID and empID = @eid"
+        strSQL = "select Employee.*,Department.depName from Employee,Department where Employee.depId = Department.depId and empId = @eid"
         myComm = New SqlCommand(strSQL, myCon)
         myComm.Parameters.AddWithValue("eid", selectA)
         myDR = myComm.ExecuteReader
         myDR.Read()
 
 
-        txtEmpID.Text = myDR.Item("EmpID")
-        txtEmpName.Text = myDR.Item("EmpName")
-        txtEmpLname.Text = myDR.Item("EmpLname")
-        txtAddress.Text = myDR.Item("address")
-        txtSalary.Text = myDR.Item("salary")
-        If myDR.Item("sex") = True Then
+        txtEmpID.Text = myDR.Item("empId")
+        txtEmpName.Text = myDR.Item("empName")
+        txtEmpLname.Text = myDR.Item("empLname")
+        txtAddress.Text = myDR.Item("empAddress")
+        txtSalary.Text = myDR.Item("empSalary")
+        If myDR.Item("empGender") = True Then
             radMale.Checked = True
         Else
             radFemale.Checked = True
